@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+</head>
+<body>
+
+<%= form_for Comment.new  do |f| %>
+	<%=f.label :content %>
+	<%=f.text_field :content %>
+	<%=f.submit :create %>
+
+	<%end%>
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+</head>
+<body>
+<div class='leftc'>
+				<% @posts.reverse.each do |post| %>
+			<div><%= post.user.username unless post.user.nil? %><span><%= post.created_at %></span></div>
+			<p><%= post.content %></p>
+				<% end %>
+		</div>
+
+
+</body>
+</html>
